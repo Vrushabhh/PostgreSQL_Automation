@@ -24,13 +24,23 @@ def database_connection(test):
 
 def execute_query(test):
     testdata = pd.read_excel('./testData/Test_Data.xlsx', sheet_name='TestData')
+    dynamicTestData = pd.read_excel('./testData/Test_Data.xlsx', sheet_name='DynamicTestData')
     conn = database_connection(test)
     cursor = conn.cursor()
     query = testdata['Query']
+    userIDs=dynamicTestData['UserId']
     print('Total SQL Queries :- ', query.__len__())
     for i in query:
-        print('Executing Query :- \n',i)
-        cursor.execute(i)
-        record = cursor.fetchone()
-        print('Query Output :- \n',record)
+        if 'userId' in i:
+            for j in userIDs:
+                k=i.replace('userId',j)
+                print('Executing Query :- \n', k)
+                cursor.execute(k)
+                record = cursor.fetchone()
+                print('Query Output :- \n', record)
+        else:
+            print('Executing Query :- \n',i)
+            cursor.execute(i)
+            record = cursor.fetchone()
+            print('Query Output :- \n',record)
     return record
