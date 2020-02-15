@@ -405,7 +405,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>Report.html</h1>
-    <p>Report generated on 10-Feb-2020 at 23:27:07 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 15-Feb-2020 at 20:08:01 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -424,7 +424,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.6.5</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 48.16 seconds. </p>
+    <p>2 tests ran in 45.09 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -440,7 +440,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test.py::Test::test_DB_Connection</td>
-          <td class="col-duration">2.32</td>
+          <td class="col-duration">1.58</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -451,81 +451,94 @@ PostgreSQL Connection Established Successfully
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test.py::Test::test_Execute_Query</td>
-          <td class="col-duration">43.81</td>
+          <td class="col-duration">39.53</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Executing Test :-  Test-02
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Report.xlsx exists, hence deleting
+Executing Test :-  Test-02
 PostgreSQL Connection Established Successfully
-Total SQL Queries :-  7
-Executing Query :- 
- SELECT version();
-Query Output :- 
- (&#x27;PostgreSQL 11.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.8.3 20140911 (Red Hat 4.8.3-9), 64-bit&#x27;,)
+Total SQL Queries :-  6
 Executing Query :- 
  select * from get_dest_prediction(&#x27;60bf53bb-c716-abcb-b079-45da4b6c421b&#x27;, cast(&#x27;2019-12-19 08:10:00-08&#x27; as timestamptz)) order by score desc;
 Query Output :- 
  (49, &#x27;Home&#x27;, &#x27;Work&#x27;, 37.4143944767717, -121.974139243307, 0.994, 1)
+Records found
 Executing Query :- 
  select * from get_dest_prediction(&#x27;72e18c9e-0a2e-ff7e-bc63-d7348b8caec8&#x27;, cast(&#x27;2019-12-19 08:10:00-08&#x27; as timestamptz)) order by score desc;
 Query Output :- 
- (51, &#x27;Shopping&#x27;, &#x27;Home&#x27;, 37.5371846117647, -122.320226754751, 0.02, 1)
+ (51, &#x27;Shopping&#x27;, &#x27;Home&#x27;, 37.5371846117647, -122.320226754751, 0.021, 1)
+Records found
 Executing Query :- 
  select * from get_dest_prediction(&#x27;dbc8613a-d84c-5e60-f641-1030c66493f0&#x27;, cast(&#x27;2019-12-19 08:10:00-08&#x27; as timestamptz)) order by score desc;
 Query Output :- 
- (54, &#x27;Home&#x27;, &#x27;Food and Drink&#x27;, 37.3776208041237, -122.117730247423, 0.187, 1)
+ (54, &#x27;Home&#x27;, &#x27;Food and Drink&#x27;, 37.3776208041237, -122.117730247423, 0.202, 1)
+Records found
 Executing Query :- 
  select * from get_dest_prediction(&#x27;5c5dca5f-1b98-fff9-f111-8072b41c5fb3&#x27;, cast(&#x27;2019-12-19 08:10:00-08&#x27; as timestamptz)) order by score desc;
 Query Output :- 
- (2, &#x27;Work&#x27;, &#x27;Food and Drink&#x27;, 37.426253, -121.974450857143, 0.159, 1)
+ (2, &#x27;Work&#x27;, &#x27;Food and Drink&#x27;, 37.426253, -121.974450857143, 0.146, 1)
+Records found
 Executing Query :- 
  select * from get_dest_prediction(&#x27;60bf53bb-c716-abcb-b079-45da4b6c421b&#x27;, cast(&#x27;2020-01-31 08:10:00-08&#x27; as timestamptz)) order by score desc;
 Query Output :- 
  (49, &#x27;Home&#x27;, &#x27;Work&#x27;, 37.4143944767717, -121.974139243307, 0.99, 1)
+Records found
 Executing Query :- 
  select * from get_dest_prediction(&#x27;72e18c9e-0a2e-ff7e-bc63-d7348b8caec8&#x27;, cast(&#x27;2020-01-31 08:10:00-08&#x27; as timestamptz)) order by score desc;
 Query Output :- 
  (51, &#x27;Home&#x27;, &#x27;School&#x27;, 37.53350865, -122.3123491, 0.991, 1)
+Records found
 Executing Query :- 
  select * from get_dest_prediction(&#x27;dbc8613a-d84c-5e60-f641-1030c66493f0&#x27;, cast(&#x27;2020-01-31 08:10:00-08&#x27; as timestamptz)) order by score desc;
 Query Output :- 
- (54, &#x27;Food and Drink&#x27;, &#x27;Home&#x27;, 37.3858003624455, -122.11658089083, 0.748, 1)
+ None
+No record found
 Executing Query :- 
  select * from get_dest_prediction(&#x27;5c5dca5f-1b98-fff9-f111-8072b41c5fb3&#x27;, cast(&#x27;2020-01-31 08:10:00-08&#x27; as timestamptz)) order by score desc;
 Query Output :- 
- (2, &#x27;Work&#x27;, &#x27;Food and Drink&#x27;, 37.426253, -121.974450857143, 0.159, 1)
+ (2, &#x27;Work&#x27;, &#x27;Food and Drink&#x27;, 37.426253, -121.974450857143, 0.146, 1)
+Records found
 Executing Query :- 
  select * from public.get_preferred_media(&#x27;60bf53bb-c716-abcb-b079-45da4b6c421b&#x27;, cast(&#x27;2020-01-31 08:15:00-08&#x27; as timestamptz)) order by media_count desc;
 Query Output :- 
  (49, 0, &#x27;morning&#x27;, &#x27;tunein:station:s294812&#x27;, 7, 1)
+Records found
 Executing Query :- 
  select * from public.get_preferred_media(&#x27;72e18c9e-0a2e-ff7e-bc63-d7348b8caec8&#x27;, cast(&#x27;2020-01-31 08:15:00-08&#x27; as timestamptz)) order by media_count desc;
 Query Output :- 
  (51, 0, &#x27;morning&#x27;, &#x27;amazon:radio:ADQMI42YG5TRI&#x27;, 5, 1)
+Records found
 Executing Query :- 
  select * from public.get_preferred_media(&#x27;dbc8613a-d84c-5e60-f641-1030c66493f0&#x27;, cast(&#x27;2020-01-31 08:15:00-08&#x27; as timestamptz)) order by media_count desc;
 Query Output :- 
- (54, 0, &#x27;daily&#x27;, &#x27;deezer:album:103255292&#x27;, 2, 1)
+ None
+No record found
 Executing Query :- 
  select * from public.get_preferred_media(&#x27;5c5dca5f-1b98-fff9-f111-8072b41c5fb3&#x27;, cast(&#x27;2020-01-31 08:15:00-08&#x27; as timestamptz)) order by media_count desc;
 Query Output :- 
  (2, 0, &#x27;daily&#x27;, &#x27;deezer:album:11174372]&#x27;, 4, 1)
+Records found
 Executing Query :- 
  select usertableid, start_label, end_label, score_rank from get_route_prediction(&#x27;60bf53bb-c716-abcb-b079-45da4b6c421b&#x27;, &#x27;2020-01-31 15:15:16+00&#x27;)
 Query Output :- 
  None
+No record found
 Executing Query :- 
  select usertableid, start_label, end_label, score_rank from get_route_prediction(&#x27;72e18c9e-0a2e-ff7e-bc63-d7348b8caec8&#x27;, &#x27;2020-01-31 15:15:16+00&#x27;)
 Query Output :- 
  None
+No record found
 Executing Query :- 
  select usertableid, start_label, end_label, score_rank from get_route_prediction(&#x27;dbc8613a-d84c-5e60-f641-1030c66493f0&#x27;, &#x27;2020-01-31 15:15:16+00&#x27;)
 Query Output :- 
  None
+No record found
 Executing Query :- 
  select usertableid, start_label, end_label, score_rank from get_route_prediction(&#x27;5c5dca5f-1b98-fff9-f111-8072b41c5fb3&#x27;, &#x27;2020-01-31 15:15:16+00&#x27;)
 Query Output :- 
  (2, &#x27;Shopping&#x27;, &#x27;Work&#x27;, 1)
+Records found
 Executing Query :- 
  select distinct cc.usertableid
         ,ST_GeoHash(ST_SetSRID(cast(cc.centroid as geometry), 4326), 6) as geohash
@@ -536,6 +549,7 @@ JOIN tz_world.tz_world tz on ST_Contains(tz.geom, CAST(cc.centroid as geometry))
 order by cc.usertableid, geohash;
 Query Output :- 
  (1, &#x27;9q9hvu&#x27;, &#x27;America/Los_Angeles&#x27;, 32610)
+Records found
 Executing Query :- 
  select count(1) as cnt
 from (
@@ -576,4 +590,5 @@ where aa.is_matched = 0
 ;
 Query Output :- 
  (2,)
+Records found
 <br/></div></td></tr></tbody></table></body></html>
