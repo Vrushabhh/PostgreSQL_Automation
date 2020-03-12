@@ -12,7 +12,7 @@ def database_connection(test):
     print('Executing Test :- ',test)
     global connection
     try:
-        testdata = pd.read_excel('./testData/Test_Data.xlsx',sheet_name='DB_Connection')
+        testdata = pd.read_excel('./testData/Test_Data.csv',sheet_name='DB_Connection')
         hostname = testdata['Host']
         username = testdata['Username']
         password = testdata['Password']
@@ -30,8 +30,8 @@ def database_connection(test):
     return connection
 
 def execute_query(self,test):
-    testdata = pd.read_excel('./testData/Test_Data.xlsx', sheet_name='TestData')
-    dynamicTestData = pd.read_excel('./testData/Test_Data.xlsx', sheet_name='DynamicTestData')
+    testdata = pd.read_excel('./testData/Test_Data.csv', sheet_name='TestData')
+    dynamicTestData = pd.read_excel('./testData/Test_Data.csv', sheet_name='DynamicTestData')
     if os.path.isfile('./Reports/Report.xlsx'):
         print('Report.xlsx exists, hence deleting')
         os.remove('./Reports/Report.xlsx')
